@@ -1,0 +1,89 @@
+.sidebar.animated {
+    animation-duration: 1s;
+    animation-name: slideInLeft;
+  }
+  
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .sidebar .nav-item {
+    animation-duration: 0.5s;
+    animation-name: fadeIn;
+    animation-fill-mode: both;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .sidebar .nav-item:nth-child(1) {
+    animation-delay: 0.2s;
+  }
+  
+  .sidebar .nav-item:nth-child(2) {
+    animation-delay: 0.6s;
+  }
+  
+  .sidebar .nav-item:nth-child(3) {
+    animation-delay: 0.8s;
+  }
+  
+  .sidebar .nav-item:nth-child(4) {
+    animation-delay: 1s;
+  }
+  
+
+@media (min-width: 560px) {
+    .vh-m {
+    height: 100vh;
+    }
+    }
+
+    .avatar-frame {
+        aspect-ratio: 1;
+        position: relative;
+        border-radius: 100%
+        }
+
+         .avatar {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        background-size: cover;
+        animation: mahdi 5s ease-in-out 2s infinite;
+        background-blend-mode: multiply;
+        box-shadow: inset 0 0 0 9px hsla(0, 2%, 17%, 0.3);
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+        overflow: hidden;
+        }
+
+        @keyframes mahdi {
+        0% {
+                border-radius: 60% 40% 30% 70%/60% 30% 70% 40%
+        }
+
+        50% {
+                border-radius: 30% 60% 70% 40%/50% 60% 30% 60%
+        }
+
+        to {
+                border-radius: 60% 40% 30% 70%/60% 30% 70% 40%
+        }
+        }
